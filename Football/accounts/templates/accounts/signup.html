@@ -8,23 +8,28 @@
         {%csrf_token%}
 
         <div class="form-floating">
-            <input type="email" class="form-control" name="email" id="foatingInput" placeholder="..." >
+            <input type="email" class="form-control" name="email" id="foatingInput" placeholder="..."  required>
             <label for="floatingInput">Email address</label>
         </div>
         <div class="form-floating">
-            <input type="text" class="form-control" name="username" id="foatingInput" placeholder="username" >
+            <input type="text" class="form-control" name="username" id="foatingInput" placeholder="username" required>
             <label for="floatingInput">username</label>
         </div>
         <div class="form-floating">
-            <input type="text" class="form-control" name="first_name" id="foatingInput" placeholder="first name" >
+            <input type="text" class="form-control" name="first_name" id="foatingInput" placeholder="first name" required>
             <label for="floatingInput">First Name</label>
         </div>
         <div class="form-floating">
-            <input type="text" class="form-control" name="last_name" id="foatingInput" placeholder="last name" >
+            <input type="text" class="form-control" name="last_name" id="foatingInput" placeholder="last name"required >
             <label for="floatingInput">last Name</label>
         </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" name="password" id="foatingInput" placeholder="..." required >
+            <label for="floatingInput">Password</label>
+        </div>
         <div>
-            <input type="submit" class="form-control" value="add user" >
+            <input type="submit" class="btn btn-primary w-100 py-2" value="add user" >
         </div>
     </form>
+</div>
 {%endblock%}
